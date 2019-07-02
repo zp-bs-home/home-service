@@ -1,0 +1,44 @@
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+/out/
+
+### NetBeans ###
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+.DS_Store
+
+/ui/node_modules/
+/ui/dist/
+npm-debug.log
+
+*.log
+/src/main/resources/static/
+out/
+log/
+build/
+tmp/
+rebel*
+
+.scannerwork/
+insight-redis.properties
