@@ -45,4 +45,6 @@ dependencies {
     // 身份认证相关依赖
     compile 'org.springframework.boot:spring-boot-starter-security'
     compile 'org.thymeleaf.extras:thymeleaf-extras-springsecurity4:3.0.2.RELEASE'
+    // 添加工具包
+    compile 'cn.hutool:hutool-all:4.5.16'
 }
