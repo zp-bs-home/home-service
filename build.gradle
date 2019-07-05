@@ -47,4 +47,5 @@ dependencies {
     compile 'org.thymeleaf.extras:thymeleaf-extras-springsecurity4:3.0.2.RELEASE'
     // 添加工具包
     compile 'cn.hutool:hutool-all:4.5.16'
+    compile 'org.projectlombok:lombok'
 }
