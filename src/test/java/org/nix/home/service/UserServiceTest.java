@@ -4,6 +4,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.nix.home.HomeApplication;
 import org.nix.home.dao.UserRepository;
+import org.nix.home.pojo.dto.UserFromRegisterDto;
 import org.nix.home.pojo.entity.User;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -39,5 +40,9 @@ public class UserServiceTest {
         userRepository.save(user);
         User userByName = userService.findUserByName(username);
         assertNotNull(userByName);
+    }
+
+    public void registerTest(){
+        UserFromRegisterDto userFromRegisterDto = new UserFromRegisterDto();
     }
 }

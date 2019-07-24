@@ -13,4 +13,13 @@ public interface UserRepository extends JpaRepository<User, Integer> {
      */
     User findByUsername(String username);
 
+    /**
+     * 通过用户的用户名或者邮箱查询用户信息
+     *
+     * @param username 用户名
+     * @param email    用户邮箱
+     * @return 查询结果
+     */
+    User findByUsernameOrEmail(String username, String email);
+
 }

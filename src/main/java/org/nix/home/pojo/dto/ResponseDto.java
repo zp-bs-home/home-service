@@ -9,6 +9,8 @@ public class ResponseDto<T> {
 
     private static final Integer SERVICE_ERROR = 500;
 
+    private static final Integer SUCCESS = 200;
+
     private boolean success;
 
     private Integer code;
@@ -29,6 +31,10 @@ public class ResponseDto<T> {
 
     public static ResponseDto permissionFailure(){
         return new ResponseDto(false, AUTHENTICATION_FAIL, "权限异常");
+    }
+
+    public static ResponseDto success(){
+        return new ResponseDto(true, SUCCESS, "处理成功");
     }
 
 }

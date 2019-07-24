@@ -24,5 +24,17 @@ public class UserService implements UserDetailsService {
         return userRepository.findByUsername(username);
     }
 
+    /**
+     * 用户注册信息
+     *
+     * @param register 用户注册
+     * @return 注册完成的用户信息
+     */
+    public User register(Register register) {
+        User user = register.register();
+        userRepository.saveAndFlush(user);
+        return user;
+    }
+
 
 }
