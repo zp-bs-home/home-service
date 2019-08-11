@@ -32,8 +32,6 @@ public class AlbumRepositoryTest {
         album.setCover("封面");
         album.setName("测试相册");
         album.setPhotoNumber(12);
-        album.setCreateTime(new Date());
-        album.setUpdateTime(new Date());
 
         albumRepository.saveAndFlush(album);
 

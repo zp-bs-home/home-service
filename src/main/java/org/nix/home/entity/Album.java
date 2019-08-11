@@ -11,8 +11,8 @@ import javax.persistence.Entity;
  * 相册
  */
 @Data
-@EqualsAndHashCode(callSuper = true)
 @Entity(name = "album")
+@EqualsAndHashCode(callSuper = true)
 public class Album extends BaseEntity {
     /**
      * 相册名字
